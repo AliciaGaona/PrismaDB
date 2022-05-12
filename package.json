@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AliciaGaona/PrismaDB#readme",
   "devDependencies": {
+    "eslint": "^8.15.0",
     "jest": "^28.1.0"
   }
 }
