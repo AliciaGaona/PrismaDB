@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AliciaGaona/PrismaDB/issues"
   },
-  "homepage": "https://github.com/AliciaGaona/PrismaDB#readme"
+  "homepage": "https://github.com/AliciaGaona/PrismaDB#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
