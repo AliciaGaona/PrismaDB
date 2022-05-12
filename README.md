@@ -2,7 +2,13 @@
 
 ## DIAGRAMA CON MERMAID EN COSNTRIUCCIÓN
 
-
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
 
 ## GLOSARIO
 
