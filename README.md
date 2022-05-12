@@ -3,9 +3,17 @@
 ## DIAGRAMA CON MERMAID EN COSNTRIUCCIÓN
 
 ```mermaid
-pie title NETFLIX
-         "Time spent looking for movie" : 90
-         "Time spent watching it" : 10
+flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
 ```
 
 ## GLOSARIO
