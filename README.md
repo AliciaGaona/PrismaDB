@@ -51,7 +51,7 @@ prisma/migrations/ - se creará esta carpeta donde se gurdará el archivo  SQL c
 Validamos que se creo la tabla en SQL
 
 
-![image](https://user-images.githubusercontent.com/99162884/168950521-9edde46b-80c0-4e2a-b750-d386a78c200f.png)
+![image](https://user-images.githubusercontent.com/99162884/168952660-9012dee3-5416-4340-bbb2-479572c08168.png)
 
 
 ## GLOSARIO
