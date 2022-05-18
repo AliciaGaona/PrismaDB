@@ -43,7 +43,17 @@ const prisma = new PrismaClient();
       },
     });
 
-    console.log('Create 3 explorers');
+    const woopa4 = await prisma.explorer.upsert({
+        where: { name: 'Woopa 4' },
+        update: {},
+        create: {
+          name: 'Woopa 4',
+                  username: 'ajolonauta4',
+                  mission: 'Node'
+        },
+      });
+  
+    console.log('Create 4 explorers');
   } catch(e) {
     console.error(e);
     process.exit(1);
