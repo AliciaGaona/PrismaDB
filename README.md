@@ -162,6 +162,21 @@ Verifica que llega el mensaje:
 ![image](https://user-images.githubusercontent.com/99162884/168960535-6a013576-54fa-438a-bd6a-cebbd84d192e.png)
 
 
+
+2. Agregar servicio GET que traiga los explorers:
+
+`localhost:3000/explorers`
+
+```js
+
+app.get('/explorers', async (req, res) => {
+  const allExplorers =  await prisma.explorer.findMany({});
+  res.json(allExplorers);
+});
+
+```
+
+
 ## GLOSARIO
 
 - Npm es una herramienta que se usa para instalar paquetes.
