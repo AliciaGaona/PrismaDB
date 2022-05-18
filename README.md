@@ -13,3 +13,11 @@
 
 
 ## Crendo API básica unida a Base de Datos, Postgresql
+
+__Dependencias__
+
+[Documentación Express](https://expressjs.com/es/)
+
+- Prisma
+
+[Documentación Prima](https://www.prisma.io/docs/)
