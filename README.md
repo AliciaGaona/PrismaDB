@@ -10,3 +10,6 @@
 - Npx es una herramienta que se usa para ejecutar paquetes.
 
 [Documentación de prisma](https://www.prisma.io/docs/concepts/components/prisma-schema)
+
+
+## Crendo API básica unida a Base de Datos, Postgresql
