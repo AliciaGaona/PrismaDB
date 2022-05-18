@@ -159,7 +159,7 @@ Verifica que llega el mensaje:
 ![image](https://user-images.githubusercontent.com/99162884/168960422-4d34a9b6-9f85-4059-95cf-d379412bf2d7.png)
 
 
-![image](https://user-images.githubusercontent.com/99162884/168960381-11467f9d-8ff2-40bd-9fb1-a0276afe1fa1.png)
+![image](https://user-images.githubusercontent.com/99162884/168960535-6a013576-54fa-438a-bd6a-cebbd84d192e.png)
 
 
 ## GLOSARIO
