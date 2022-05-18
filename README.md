@@ -2,13 +2,30 @@
 
 ## DIAGRAMA CON MERMAID EN COSNTRIUCCIÓN
 
-Instalamos express
+
+Paso 1. __Inicializamos nuestro proyecto:__
+
+[Pasos para instalar](https://aliciagaona.github.io/my_launchx_blog/posts/pasosparainicializarnodejs/)
+
+Paso 2. __Instalamos express__
 
 npm install express --save-dev
 
+Paso 3. __Instalamos prisma__
+
 npm install prisma --save-dev
 
-Instalamos prisma
+Paso 4. Asegurarnos de tener una base de datos creada, en este caso usaremos postprogresql
+
+
+
+
+
+
+
+
+
+
 
 ## GLOSARIO
 
