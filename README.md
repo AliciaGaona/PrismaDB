@@ -176,6 +176,15 @@ app.get('/explorers', async (req, res) => {
 
 ```
 
+Verificar respuesta, nos trae todo los explorers que generamos en nuestra tabla
+
+
+![image](https://user-images.githubusercontent.com/99162884/169127916-6f4139bc-e846-47c9-afd2-a836d6944862.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/169127336-8607bf5a-7221-4890-b6bc-4357d7438caf.png)
+
+
 
 ## GLOSARIO
 
