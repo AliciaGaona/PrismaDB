@@ -123,6 +123,45 @@ _Verificando la inserción_
 ![image](https://user-images.githubusercontent.com/99162884/168957978-754752c7-cf12-4391-b077-6cbce12d3097.png)
 
 
+
+
+
+# CRUD
+
+1. crear un archivo server.js para ahi comenzar nuestro servidor.
+
+```js
+
+const express = require('express');
+const app = express();
+app.use(express.json());
+const port = process.env.PORT || 3000;
+
+// Require para usar Prisma
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
+
+app.get('/', (req, res) => {
+  res.json({message: 'alive'});
+});
+
+app.listen(port, () => {
+  console.log(`Listening to requests on port ${port}`);
+});
+
+```
+
+
+
+
+Verifica que llega el mensaje:
+
+![image](https://user-images.githubusercontent.com/99162884/168960422-4d34a9b6-9f85-4059-95cf-d379412bf2d7.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/168960535-6a013576-54fa-438a-bd6a-cebbd84d192e.png)
+
+
 ## GLOSARIO
 
 - Npm es una herramienta que se usa para instalar paquetes.
