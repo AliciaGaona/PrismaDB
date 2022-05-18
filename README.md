@@ -42,10 +42,16 @@ model Explorer {
 
 ![image](https://user-images.githubusercontent.com/99162884/168948404-b5183f77-a04f-4fb2-b8d0-347fd6461915.png)
 
+
 prisma/migrations/ - se creará esta carpeta donde se gurdará el archivo  SQL creado junto con el código, quederá algo asi:
 
 ![image](https://user-images.githubusercontent.com/99162884/168948770-9917d6a6-0f85-491c-a420-1d75dcc3ecfa.png)
 
+
+Validamos que se creo la tabla en SQL
+
+
+![image](https://user-images.githubusercontent.com/99162884/168950521-9edde46b-80c0-4e2a-b750-d386a78c200f.png)
 
 
 ## GLOSARIO
