@@ -15,6 +15,8 @@ Paso 3. __Instalamos prisma__
 
 npm install prisma --save-dev
 
+Paso 3.1. Inicializamos prisma ´npx prisma init´
+
 Paso 4. Asegurarnos de tener una base de datos creada, en este caso usaremos postprogresql
 
 
