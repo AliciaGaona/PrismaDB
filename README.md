@@ -54,6 +54,68 @@ Validamos que se creo la tabla en SQL
 ![image](https://user-images.githubusercontent.com/99162884/168952660-9012dee3-5416-4340-bbb2-479572c08168.png)
 
 
+Paso 7. Automatizando ingresar datos a tabla
+
+Para lograr esto, se crea un seed.js  y se integra el siguiente código:
+
+```js
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
+
+(async function main() {
+  try {
+    const woopa = await prisma.explorer.upsert({
+      where: { name: 'Woopa' },
+      update: {},
+      create: {
+        name: 'Woopa',
+				username: 'ajolonauta',
+				mission: 'Node'
+      },
+    });
+
+    const woopa1 = await prisma.explorer.upsert({
+      where: { name: 'Woopa1' },
+      update: {},
+      create: {
+        name: 'Woopa1',
+				username: 'ajolonauta1',
+				mission: 'Node'
+      },
+    });
+
+    const woopa2 = await prisma.explorer.upsert({
+      where: { name: 'Woopa 2' },
+      update: {},
+      create: {
+        name: 'Woopa 2',
+				username: 'ajolonauta2',
+				mission: 'Java'
+      },
+    });
+
+    const woopa3 = await prisma.explorer.upsert({
+      where: { name: 'Woopa 3' },
+      update: {},
+      create: {
+        name: 'Woopa 3',
+				username: 'ajolonauta3',
+				mission: 'Node'
+      },
+    });
+
+    console.log('Create 3 explorers');
+  } catch(e) {
+    console.error(e);
+    process.exit(1);
+  } finally {
+    await prisma.$disconnect();
+  }
+})();
+
+```
+
+
 ## GLOSARIO
 
 - Npm es una herramienta que se usa para instalar paquetes.
@@ -72,3 +134,8 @@ __Dependencias__
 - Prisma
 
 [Documentación Prima](https://www.prisma.io/docs/concepts/components/prisma-schema)
+
+
+Créditos:
+
+[Guia de ejercicio](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/prismadb.md)
