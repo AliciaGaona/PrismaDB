@@ -114,6 +114,9 @@ const prisma = new PrismaClient();
 })();
 
 ```
+_Al correr el archivo se agregan los datos_
+
+![image](https://user-images.githubusercontent.com/99162884/168955870-c917e736-3bb1-45eb-99c6-4c3d38dac009.png)
 
 
 ## GLOSARIO
