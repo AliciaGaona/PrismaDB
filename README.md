@@ -163,7 +163,7 @@ Verifica que llega el mensaje:
 
 
 
-2. Agregar servicio GET que traiga los explorers:
+2. Agregar endPoint GET que traiga los explorers:
 
 `localhost:3000/explorers`
 
@@ -184,6 +184,30 @@ Verificar respuesta, nos trae todo los explorers que generamos en nuestra tabla
 
 ![image](https://user-images.githubusercontent.com/99162884/169127336-8607bf5a-7221-4890-b6bc-4357d7438caf.png)
 
+
+3. Agregar endPoint GET que traiga el explorer dependiendo del ID.
+
+`localhost:3000/explorers/1`
+
+
+```js
+
+app.get('/explorers/:id', async (req, res) => {
+  const id = req.params.id;
+  const explorer = await prisma.explorer.findUnique({where: {id: parseInt(id)}});
+  res.json(explorer);
+});
+
+```
+
+
+Verificando respuesta, te trae el explorer que contenga ese Id
+
+
+![image](https://user-images.githubusercontent.com/99162884/169132980-a7e18e1b-2535-4a4d-8a3c-779dc4f278d5.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/169132496-60630ba3-ec0d-43ee-81e6-47b1b3a0abcd.png)
 
 
 ## GLOSARIO
