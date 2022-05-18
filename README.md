@@ -20,4 +20,4 @@ __Dependencias__
 
 - Prisma
 
-[Documentación Prima](https://www.prisma.io/docs/)
+[Documentación Prima](https://www.prisma.io/docs/concepts/components/prisma-schema)
