@@ -136,5 +136,6 @@ __Dependencias__
 [Documentación Prima](https://www.prisma.io/docs/concepts/components/prisma-schema)
 
 
+Créditos:
 
 [Guia de ejercicio](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/prismadb.md)
