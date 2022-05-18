@@ -2,6 +2,13 @@
 
 ## DIAGRAMA CON MERMAID EN COSNTRIUCCIÓN
 
+Instalamos express
+
+npm install express --save-dev
+
+npm install prisma --save-dev
+
+Instalamos prisma
 
 ## GLOSARIO
 
