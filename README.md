@@ -162,6 +162,30 @@ Verifica que llega el mensaje:
 ![image](https://user-images.githubusercontent.com/99162884/168960535-6a013576-54fa-438a-bd6a-cebbd84d192e.png)
 
 
+
+2. Agregar servicio GET que traiga los explorers:
+
+`localhost:3000/explorers`
+
+```js
+
+app.get('/explorers', async (req, res) => {
+  const allExplorers =  await prisma.explorer.findMany({});
+  res.json(allExplorers);
+});
+
+```
+
+Verificar respuesta, nos trae todo los explorers que generamos en nuestra tabla
+
+
+![image](https://user-images.githubusercontent.com/99162884/169127916-6f4139bc-e846-47c9-afd2-a836d6944862.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/169127336-8607bf5a-7221-4890-b6bc-4357d7438caf.png)
+
+
+
 ## GLOSARIO
 
 - Npm es una herramienta que se usa para instalar paquetes.
