@@ -286,6 +286,38 @@ Verificando respuesta
  ![image](https://user-images.githubusercontent.com/99162884/169218964-a156c1d6-4976-430b-ac4a-611d8afe3379.png)
 
 
+
+
+| TIPO | URL|
+| ------------ | ------- |
+| GET | `localhost:3000/explorers` |
+|  GET | `localhost:3000/explorers/1` |
+| POST  | `localhost:3000/explorers/1` |
+|  PUT | `localhost:3000/explorers/:id` |
+|  DELETE | `localhost:3000/explorers/:id` |
+
+
+
+
+---
+
+#EJERCICIO PARA PRÁCTICAR LO APRENDIDO ANTERIORMENTE
+
+Instrucciones crea una nueva tabla en tu base de datos y  crea una API  con CRUD, para utilizar esos datos creados.
+
+
+| Campo | Tipo de Dato|
+| ------------ | ------- |
+|  id        | Integer (autogenerado) |
+| name| String |
+|  lang     | String |
+| missionCommander   |  String  |
+|  enrollments | Integer  |
+|  hasCertification | Boolean  |
+
+
+
+
 ## GLOSARIO
 
 - Npm es una herramienta que se usa para instalar paquetes.
