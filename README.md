@@ -226,6 +226,9 @@ app.post('/explorers', async (req, res) => {
 });
 ```
 
+
+4. Crear endpoint PUT
+
 ## GLOSARIO
 
 - Npm es una herramienta que se usa para instalar paquetes.
