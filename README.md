@@ -1,8 +1,6 @@
 # PrismaDB
 
-## DIAGRAMA CON MERMAID EN COSNTRIUCCIÓN
-
-__Ejercicios de práctica LaunchX / NodeJS by Carlo Gilmar:__
+## __Ejercicios de práctica LaunchX / NodeJS by Carlo Gilmar:__ 
 
 
 Paso 1. __Inicializamos nuestro proyecto:__
