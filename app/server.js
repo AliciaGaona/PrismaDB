@@ -22,7 +22,7 @@ app.get('/explorers/:id', async (req, res) => {
   res.json(explorer);
 });
 
-app.post('/explorers', async (req, res) => {
+app.post('/explorers/create', async (req, res) => {
   const explorer = {
     name: req.body.name,
     username: req.body.username,
@@ -32,6 +32,8 @@ app.post('/explorers', async (req, res) => {
   await prisma.explorer.create({data: explorer});
   return res.json({message});
 });
+
+
 
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
