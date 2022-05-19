@@ -2,6 +2,8 @@
 
 ## DIAGRAMA CON MERMAID EN COSNTRIUCCIÓN
 
+__Ejercicios de práctica LaunchX / NodeJS by Carlo Gilmar:__
+
 
 Paso 1. __Inicializamos nuestro proyecto:__
 
@@ -123,9 +125,6 @@ _Verificando la inserción_
 ![image](https://user-images.githubusercontent.com/99162884/168957978-754752c7-cf12-4391-b077-6cbce12d3097.png)
 
 
-
-
-
 # CRUD
 
 1. crear un archivo server.js para ahi comenzar nuestro servidor.
@@ -209,6 +208,23 @@ Verificando respuesta, te trae el explorer que contenga ese Id
 
 ![image](https://user-images.githubusercontent.com/99162884/169132496-60630ba3-ec0d-43ee-81e6-47b1b3a0abcd.png)
 
+
+3. Crear enpoint POST para crear un nuevo explorer, le mandamos lso parametros por el body
+
+`localhost:3000/explorers/1`
+
+```js
+app.post('/explorers', async (req, res) => {
+  const explorer = {
+    name: req.body.name,
+    username: req.body.username,
+    mission: req.body.mission
+   };
+  const message = 'Explorer creado.';
+  await prisma.explorer.create({data: explorer});
+  return res.json({message});
+});
+```
 
 ## GLOSARIO
 
