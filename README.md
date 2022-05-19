@@ -227,7 +227,66 @@ app.post('/explorers', async (req, res) => {
 ```
 
 
-4. Crear endpoint PUT
+Verificar respuesta, mensaje de creación de nuevo explorer
+
+
+![image](https://user-images.githubusercontent.com/99162884/169217722-159b9f22-d7ae-4055-bde9-828b2e37c363.png)
+
+
+4. Crear endpoint PUT, según el ID que recibe , va a actualizar ese explorer
+
+`localhost:3000/explorers/:id`
+
+```js
+
+app.put('/explorers/:id', async (req, res) => {
+	const id = parseInt(req.params.id);
+
+	await prisma.explorer.update({
+		where: {
+			id: id
+		},
+		data: {
+			mission: req.body.mission
+		}
+	})
+
+	return res.json({message: "Actualizado correctamente"});
+});
+
+```
+Verificando en Postman
+
+![image](https://user-images.githubusercontent.com/99162884/169218592-2e9b3b5a-e99d-4cf1-94c5-55384416e1b9.png)
+
+
+5. Creando un endPoint DELETE, que con ID borre un dato
+
+`localhost:3000/explorers/:id`
+
+```js
+
+app.put('/explorers/:id', async (req, res) => {
+	const id = parseInt(req.params.id);
+
+	await prisma.explorer.update({
+		where: {
+			id: id
+		},
+		data: {
+			mission: req.body.mission
+		}
+	})
+
+	return res.json({message: "Actualizado correctamente"});
+});
+
+```
+
+Verificando respuesta
+
+ ![image](https://user-images.githubusercontent.com/99162884/169218964-a156c1d6-4976-430b-ac4a-611d8afe3379.png)
+
 
 ## GLOSARIO
 
