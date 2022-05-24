@@ -316,7 +316,7 @@ Instrucciones crea una nueva tabla en tu base de datos y  crea una API  con CRUD
 |  hasCertification | Boolean  |
 
 
-1. Agrego nuevo modelo al  `chema.prisma` prisma para crear tabla en mi db.
+1. Agrego nuevo modelo al  `schema.prisma` prisma para crear tabla en mi db.
 
 
 ![image](https://user-images.githubusercontent.com/99162884/169929119-7b6f8bd3-cf06-41cd-84f8-bc934f308a96.png)
