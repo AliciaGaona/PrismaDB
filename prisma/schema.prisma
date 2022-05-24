@@ -25,7 +25,7 @@ model ExplorerInfo {
   name String @unique
   lang String @db.VarChar(255)
   missionCommander String @db.VarChar(255)
-  enrollments Int @enrollments
+  enrollments Int 
   hasCertification Boolean @default(false)
 
 }
