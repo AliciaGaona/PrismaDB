@@ -51,7 +51,7 @@ prisma/migrations/ - se creará esta carpeta donde se gurdará el archivo  SQL c
 Validamos que se creo la tabla en SQL
 
 
-![image](https://user-images.githubusercontent.com/99162884/168952660-9012dee3-5416-4340-bbb2-479572c08168.png)
+![image](https://user-images.githubusercontent.com/99162884/169932256-3e26dc52-f7c2-49cb-b8c8-bc1af5f1ffa1.png)
 
 
 Paso 7. Automatizando ingresar datos a tabla
