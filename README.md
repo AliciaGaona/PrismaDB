@@ -330,6 +330,43 @@ Instrucciones crea una nueva tabla en tu base de datos y  crea una API  con CRUD
 ![image](https://user-images.githubusercontent.com/99162884/169929253-00c73bf6-e144-4cd1-b06e-c93ae04cfc17.png)
 
 
+![image](https://user-images.githubusercontent.com/99162884/169933950-ee2d459b-adf9-4f20-b6ab-78de552027a9.png)
+
+
+Reviso si se creo la tabla
+
+
+![image](https://user-images.githubusercontent.com/99162884/169932466-d5bf336a-1bcd-4e54-af48-29c8fa3a0ef8.png)
+
+
+3. Insertar registros a la tabla ExplorerInfo
+
+
+
+
+
+
+
+Probando  enpoints nuevos CRUD que usa datos de nuestra nueva tabla
+
+Get- Trae todos los registros:
+
+![image](https://user-images.githubusercontent.com/99162884/169942037-7b6e289f-3cbd-4316-a22a-cce39358cbd7.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/169942052-51ecd56a-2930-4545-8356-45fce02edc3b.png)
+
+
+Get por id- trae todo lo de ese id
+
+![image](https://user-images.githubusercontent.com/99162884/169941877-56141a41-0ead-4a9f-a66d-bb20cb26603d.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/169941940-440b84d8-949e-4db7-99cc-31a673fc1ba9.png)
+
+
+
+
 
 
 ## GLOSARIO
