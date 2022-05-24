@@ -357,7 +357,7 @@ Get- Trae todos los registros:
 ![image](https://user-images.githubusercontent.com/99162884/169942052-51ecd56a-2930-4545-8356-45fce02edc3b.png)
 
 
-Get por id- trae todo lo de ese id
+Get por id- trae todo lo de ese idr:
 
 ![image](https://user-images.githubusercontent.com/99162884/169941877-56141a41-0ead-4a9f-a66d-bb20cb26603d.png)
 
@@ -365,7 +365,10 @@ Get por id- trae todo lo de ese id
 ![image](https://user-images.githubusercontent.com/99162884/169941940-440b84d8-949e-4db7-99cc-31a673fc1ba9.png)
 
 
+Post - crear un nuevo registro
 
+
+En proceso de documentación.....
 
 
 
