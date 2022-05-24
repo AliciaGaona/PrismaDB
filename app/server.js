@@ -98,6 +98,12 @@ app.put('/explorersInfo/:id', async (req, res) => {
 });
 
 
+app.delete('/explorersInfo/:id', async (req, res) => {
+	const id = parseInt(req.params.id);
+	await prisma.explorerInfo.delete({where: {id: id}});
+	return res.json({message: "Eliminado correctamente"});
+});
+
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
