@@ -316,6 +316,19 @@ Instrucciones crea una nueva tabla en tu base de datos y  crea una API  con CRUD
 |  hasCertification | Boolean  |
 
 
+1. Agrego nuevo modelo a prisma para crear tabla en mi db.
+
+
+![image](https://user-images.githubusercontent.com/99162884/169929119-7b6f8bd3-cf06-41cd-84f8-bc934f308a96.png)
+
+
+2. Corro este comando para que prisma agregue el modelo como una nueva tabla en la bd.
+
+`npx prisma migrate dev --name init`
+
+
+![image](https://user-images.githubusercontent.com/99162884/169929253-00c73bf6-e144-4cd1-b06e-c93ae04cfc17.png)
+
 
 
 ## GLOSARIO
