@@ -81,6 +81,23 @@ app.post('/explorersInfo', async (req, res) => {
   return res.json({message});
 });
 
+
+app.put('/explorersInfo/:id', async (req, res) => {
+	const id = parseInt(req.params.id);
+
+	await prisma.explorerInfo.update({
+		where: {
+			id: id
+		},
+		data: {
+			missionCommander: req.body.missionCommander
+		}
+	})
+
+	return res.json({message: "Actualizado correctamente"});
+});
+
+
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
