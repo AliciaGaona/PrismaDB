@@ -423,6 +423,23 @@ Cliente usa dependecia Axios
 [Documentación dependencia Axios](https://www.npmjs.com/package/axios)
 
 
+Al instalar la dependencia Axios, se crea un archivo llamado __http-common.js__ , aqui agregamos la referencia de nuestro servidor al que se conecatará para utilizar los servicios de nuestra API.
+
+![image](https://user-images.githubusercontent.com/99162884/171311900-a4df13d3-fcd7-45df-a9e4-30a6fa84886d.png)
+
+
+En el Archivo __src/services/ExplorerService.js__ tenemos la clase __ExplorerService__ que contiene métodos CRUD, que llamarán a los Endpoints disponibles en mi servicio.
+
+![image](https://user-images.githubusercontent.com/99162884/171312140-b2963668-160d-43ee-973a-bcc301a62e31.png)
+
+En la carpeta components están los componentes usados de Vue: template y script.
+
+
+## Diagrama de funcionamiento de poryecto(cliente), realizado con VUE
+
+En proceso actividad: 5. Realiza un diagrama de cómo funciona este proyecto de Vue JS, incluye cómo funciona el router.js, los templates, los services y los componentes.(Incluye estos diagramas en tu fork.)
+
+
 
 En proceso de documentación.....
 
@@ -449,3 +466,4 @@ __Dependencias__
 Créditos:
 
 [Guia de ejercicio](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/prismadb.md)
+@visual_partner #VisualPartnership #InnovacciónVirtual #LaunchX #NodeJs
