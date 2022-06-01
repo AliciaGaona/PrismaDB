@@ -343,10 +343,6 @@ Reviso si se creo la tabla
 
 
 
-
-
-
-
 Probando  enpoints nuevos CRUD que usa datos de nuestra nueva tabla
 
 Get- Trae todos los registros:
@@ -368,9 +364,67 @@ Get por id- trae todo lo de ese idr:
 Post - crear un nuevo registro
 
 
+
+## __Conectar a un cliente__
+
+Se realiza fork a repo proporcionada con proyecto de vue listo para recibir la información 
+
+[Fork](https://github.com/AliciaGaona/client-launchx/)
+[Proyecto original](https://github.com/visualpartnership/client-launchx)
+
+
+1. Preparamos nuestro servidor, intalamos dependencia cors, esta la usaremos para permitir que nuestra API sea utilizada por cin cliente, usando Control de acceso HTTP (CORS)
+
+[Documentación Cors](https://www.npmjs.com/package/cors)
+
+- Comando para instalar - `npm install cors --save`
+
+Modificamos la configuración de nuestro servidor para utilizar CORS.
+
+
+```js
+
+const express = require('express');
+const app = express();
+app.use(express.json());
+const port = process.env.PORT || 3000;
+// Require para usar Prisma
+const { PrismaClient } = require('@prisma/client');//prisma es nuestro cliente
+const prisma = new PrismaClient();
+
+//cors
+const cors = require("cors");
+
+const corsOptions={
+  origin: "http://localhost:8081"
+};
+
+app.use(cors(corsOptions));
+
+
+```
+
+Corremos nuestro servidor:
+
+![image](https://user-images.githubusercontent.com/99162884/171311276-13ea4a74-956f-49c1-b3ef-818180194eca.png)
+
+Corremos nuestro cliente:
+
+![image](https://user-images.githubusercontent.com/99162884/171311316-b860814b-8317-481d-9570-b3befcdb4646.png)
+
+![image](https://user-images.githubusercontent.com/99162884/171311361-8b48ee44-7e5e-44f0-ae13-a0a7b751a2fd.png)
+
+![image](https://user-images.githubusercontent.com/99162884/171311399-413a9fb6-88d9-4248-8959-ddc25df1a458.png)
+
+![image](https://user-images.githubusercontent.com/99162884/171311642-8a13709c-1883-4b83-8182-f2b35f058f05.png)
+
+
+Cliente usa dependecia Axios
+[Documentación dependencia Axios](https://www.npmjs.com/package/axios)
+
+
+
 En proceso de documentación.....
-
-
 
 ## GLOSARIO
 
