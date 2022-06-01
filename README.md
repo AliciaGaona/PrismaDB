@@ -466,4 +466,7 @@ __Dependencias__
 Créditos:
 
 [Guia de ejercicio](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/prismadb.md)
+[Guia de ejercicio](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/client_server.md)
 @visual_partner #VisualPartnership #InnovacciónVirtual #LaunchX #NodeJs
+
+
