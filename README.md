@@ -343,10 +343,6 @@ Reviso si se creo la tabla
 
 
 
-
-
-
-
 Probando  enpoints nuevos CRUD que usa datos de nuestra nueva tabla
 
 Get- Trae todos los registros:
@@ -368,9 +364,84 @@ Get por id- trae todo lo de ese idr:
 Post - crear un nuevo registro
 
 
+
+## __Conectar a un cliente__
+
+Se realiza fork a repo proporcionada con proyecto de vue listo para recibir la información 
+
+[Fork](https://github.com/AliciaGaona/client-launchx/)
+[Proyecto original](https://github.com/visualpartnership/client-launchx)
+
+
+1. Preparamos nuestro servidor, intalamos dependencia cors, esta la usaremos para permitir que nuestra API sea utilizada por cin cliente, usando Control de acceso HTTP (CORS)
+
+[Documentación Cors](https://www.npmjs.com/package/cors)
+
+- Comando para instalar - `npm install cors --save`
+
+Modificamos la configuración de nuestro servidor para utilizar CORS.
+
+
+```js
+
+const express = require('express');
+const app = express();
+app.use(express.json());
+const port = process.env.PORT || 3000;
+// Require para usar Prisma
+const { PrismaClient } = require('@prisma/client');//prisma es nuestro cliente
+const prisma = new PrismaClient();
+
+//cors
+const cors = require("cors");
+
+const corsOptions={
+  origin: "http://localhost:8081"
+};
+
+app.use(cors(corsOptions));
+
+
+```
+
+Corremos nuestro servidor:
+
+![image](https://user-images.githubusercontent.com/99162884/171311276-13ea4a74-956f-49c1-b3ef-818180194eca.png)
+
+Corremos nuestro cliente:
+
+![image](https://user-images.githubusercontent.com/99162884/171311316-b860814b-8317-481d-9570-b3befcdb4646.png)
+
+![image](https://user-images.githubusercontent.com/99162884/171311361-8b48ee44-7e5e-44f0-ae13-a0a7b751a2fd.png)
+
+![image](https://user-images.githubusercontent.com/99162884/171311399-413a9fb6-88d9-4248-8959-ddc25df1a458.png)
+
+![image](https://user-images.githubusercontent.com/99162884/171311642-8a13709c-1883-4b83-8182-f2b35f058f05.png)
+
+
+Cliente usa dependecia Axios
+[Documentación dependencia Axios](https://www.npmjs.com/package/axios)
+
+
+Al instalar la dependencia Axios, se crea un archivo llamado __http-common.js__ , aqui agregamos la referencia de nuestro servidor al que se conecatará para utilizar los servicios de nuestra API.
+
+![image](https://user-images.githubusercontent.com/99162884/171311900-a4df13d3-fcd7-45df-a9e4-30a6fa84886d.png)
+
+
+En el Archivo __src/services/ExplorerService.js__ tenemos la clase __ExplorerService__ que contiene métodos CRUD, que llamarán a los Endpoints disponibles en mi servicio.
+
+![image](https://user-images.githubusercontent.com/99162884/171312140-b2963668-160d-43ee-973a-bcc301a62e31.png)
+
+En la carpeta components están los componentes usados de Vue: template y script.
+
+
+## Diagrama de funcionamiento de poryecto(cliente), realizado con VUE
+
+En proceso actividad: 5. Realiza un diagrama de cómo funciona este proyecto de Vue JS, incluye cómo funciona el router.js, los templates, los services y los componentes.(Incluye estos diagramas en tu fork.)
+
+
+
 En proceso de documentación.....
-
-
 
 ## GLOSARIO
 
@@ -395,3 +466,7 @@ __Dependencias__
 Créditos:
 
 [Guia de ejercicio](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/prismadb.md)
+[Guia de ejercicio](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/client_server.md)
+@visual_partner #VisualPartnership #InnovacciónVirtual #LaunchX #NodeJs
+
+
