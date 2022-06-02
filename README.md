@@ -441,6 +441,70 @@ En proceso actividad: 5. Realiza un diagrama de cómo funciona este proyecto de 
 
 
 
+---
+
+## Nuevo Feature Fullstack
+
+Crear nueva tabla
+
+
+`Prisma schema`
+
+```js
+
+model missionCommander {
+  id Int @id @default(autoincrement())
+  name String @unique
+  username String @db.VarChar(255)
+  mainStack String @db.VarChar(255)
+  currentEnrollment Boolean @default(false)
+  hasAzureCertification Boolean @default(false)
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/99162884/171549195-22cb2ea8-23e7-474b-881a-103a946ddda8.png)
+
+Agregar registros a campos:
+
+`seed.js`
+
+```js
+(async function main() {
+  try {
+    const woopa = await prisma.missionCommander.upsert({
+      where: { name: 'Woopa' },
+      update: {},
+      create: {
+        name: 'Woopa',
+        username: 'Wuu',       
+				mainStack: 'Carlo Gilmar',
+        currentEnrollment:true,
+        hasAzureCertification:true
+
+      },
+    });
+  
+    console.log('Create 1 mission');
+  } catch(e) {
+    console.error(e);
+    process.exit(1);
+  } finally {
+    await prisma.$disconnect();
+  }
+})();
+
+```
+
+
+![image](https://user-images.githubusercontent.com/99162884/171548954-c69a8f62-95a0-4f7f-bd9d-6ded4573cb59.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/171548764-8db93a8e-feb1-4c6f-98f0-04929157d58a.png)
+
+
+
+
 En proceso de documentación.....
 
 ## GLOSARIO
