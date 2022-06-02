@@ -65,22 +65,47 @@ const prisma = new PrismaClient();
 
 
 
+// (async function main() {
+//   try {
+//     const woopa = await prisma.explorerInfo.upsert({
+//       where: { name: 'Woopa' },
+//       update: {},
+//       create: {
+//         name: 'Woopa',
+//         lang: 'Wuu',       
+// 				missionCommander: 'Carlo Gilmar',
+//         enrollments:2,
+//         hasCertification:true
+
+//       },
+//     });
+  
+//     console.log('Create 1 explorers info');
+//   } catch(e) {
+//     console.error(e);
+//     process.exit(1);
+//   } finally {
+//     await prisma.$disconnect();
+//   }
+// })();
+
+
 (async function main() {
   try {
-    const woopa = await prisma.explorerInfo.upsert({
+    const woopa = await prisma.missionCommander.upsert({
       where: { name: 'Woopa' },
       update: {},
       create: {
         name: 'Woopa',
-        lang: 'Wuu',       
-				missionCommander: 'Carlo Gilmar',
-        enrollments:2,
-        hasCertification:true
+        username: 'Wuu',       
+				mainStack: 'Carlo Gilmar',
+        currentEnrollment:true,
+        hasAzureCertification:true
 
       },
     });
   
-    console.log('Create 1 explorers info');
+    console.log('Create 1 mission');
   } catch(e) {
     console.error(e);
     process.exit(1);
