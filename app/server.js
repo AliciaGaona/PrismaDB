@@ -112,6 +112,20 @@ app.delete('/explorersInfo/:id', async (req, res) => {
 	return res.json({message: "Eliminado correctamente"});
 });
 
+// Nuevo Feature Fullstack
+// CRUD tabla missionCommander
+
+
+app.get('/missionCommander', async (req, res) => {
+  const allInfoMissionComander =  await prisma.missionCommander.findMany({});
+  res.json(allInfoMissionComander);
+});
+
+
+
+
+
+
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
