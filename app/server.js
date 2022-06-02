@@ -121,7 +121,11 @@ app.get('/missionCommander', async (req, res) => {
   res.json(allInfoMissionComander);
 });
 
-
+app.get('/missionCommander/:id', async (req, res) => {
+  const id = req.params.id;
+  const allInfoMissionComander = await prisma.missionCommander.findUnique({where: {id: parseInt(id)}});
+  res.json(allInfoMissionComander);
+});
 
 
 
