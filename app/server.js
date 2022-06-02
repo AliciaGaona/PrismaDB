@@ -128,6 +128,18 @@ app.get('/missionCommander/:id', async (req, res) => {
 });
 
 
+app.post('/missionCommander', async (req, res) => {
+  const missinComanderInfoNew = {
+    name: req.body.name,
+    username: req.body.username,
+    mainStack: req.body.mainStack,
+    currentEnrollment: req.body.currentEnrollment,
+    hasAzureCertification: req.body.hasAzureCertification
+   };
+  const message = 'mission';
+  await prisma.missionCommander.create({data: missinComanderInfoNew});
+  return res.json({message});
+});
 
 
 app.listen(port, () => {
