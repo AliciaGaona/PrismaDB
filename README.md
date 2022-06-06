@@ -503,6 +503,7 @@ Agregar registros a campos:
 ![image](https://user-images.githubusercontent.com/99162884/171548764-8db93a8e-feb1-4c6f-98f0-04929157d58a.png)
 
 
+ [Repo de Fork para cliente con Vue](https://github.com/AliciaGaona/client-launchx)
 
 
 En proceso de documentación.....
